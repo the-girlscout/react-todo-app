@@ -67,7 +67,7 @@ class Input extends Component {
                 ref={this.myInput1}
                 placeholder="insert todo here" 
                 onChange={this.handleChange}
-                defaultValue="defaultValue input1"               
+                               
             />
             {/* <input
                 type="text"

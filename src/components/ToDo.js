@@ -62,10 +62,10 @@ const ToDo = (props) => {
     return (
         <div>
             <button className="removeTodo" onClick={(event) => showId(props)}>Remove</button>{/* ohne (event) => klappt es nicht */}
-            <button onClick={ showId2(props) }>t2</button>
+           {/*} <button onClick={ showId2(props) }>t2</button>
             <button id={'hallo'} onClick={showId3} >t3</button>
             <button onClick={ showId4(props) } >t4</button>
-            <button onClick={ showId5(props) } >t5</button>
+    <button onClick={ showId5(props) } >t5</button>*/}
             Text: {props.children} | ID: {props.id}
         </div>
     )
