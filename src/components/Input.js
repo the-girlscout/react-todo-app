@@ -14,7 +14,7 @@ class Input extends Component {
         this.auto = {
             name: 'mazda' //state property
         };
-        this.name = 'golf'; //instance property
+        this.name2 = 'golf'; //instance property
     }
     
 
@@ -36,23 +36,26 @@ class Input extends Component {
         })
     }
 
-    addToDoInput = () => {
-        console.log("Input.js im updateToDo: ", this.myInput1.current.value);
+    addTaskInput = () => {
+        console.log("Input.js im addTaskInput: ", this.myInput1.current.value);
         //this.setState({value: "wasserball"});        
-        this.props.addTodoAppInput(this.myInput1.current.value);
+        this.props.addTaskAppInput(this.myInput1.current.value);
     }
 
-  componentDidMount(){
-      console.log("Input.js - myInput1.value: ", this.myInput1.current.value);
-     // console.log("Input.js - myInput2.value: ", this.myInput2.value);
-     // console.log("Input.js - state1: ", this.state.myStateIs);
-      console.log("Input.js - auto.name (state): ", this.auto.name);
-      console.log("Input.js - auto.name (instance): ", this.name);
-  }
+    //testzwecke
+    componentDidMount(){
+        console.log("Input.js - myInput1.value: ", this.myInput1.current.value);
+        // console.log("Input.js - myInput2.value: ", this.myInput2.value);
+        // console.log("Input.js - state1: ", this.state.myStateIs);
+        console.log("Input.js - auto.name (state): ", this.auto.name);
+        console.log("Input.js - auto.name (instance): ", this.name2);
+    }
 
-  showState(){
-      console.log("Input.js - state2: ", this.myStateIs);
-  }
+
+    //testzwecke
+    showState(){
+        console.log("Input.js - state2: ", this.myStateIs);
+    }
 
   render() {
   //console.log("this render:", this);
@@ -73,7 +76,7 @@ class Input extends Component {
             />*/}
             {/*<button onClick={this.buttonClicked}>Add ToDo</button>*/}
             {/*<button onClick={this.updateLocalState}>Update local state</button>*/}
-            <button onClick={this.addToDoInput}>Add ToDo</button>
+            <button onClick={this.addTaskInput}>Add ToDo</button>
         </div>
     );
   }
